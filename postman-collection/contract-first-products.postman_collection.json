@@ -6,18 +6,39 @@
 	},
 	"item": [
 		{
-			"name": "get-products",
+			"name": "get-service-products",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/products",
+					"raw": "http://localhost:8081/service/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"service",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-client-products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/client/products",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"client",
 						"products"
 					]
 				}
