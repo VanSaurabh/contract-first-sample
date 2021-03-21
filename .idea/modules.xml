@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/contract-first/contract-first.iml" filepath="$PROJECT_DIR$/contract-first/contract-first.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/contract-first-sample.iml" filepath="$PROJECT_DIR$/.idea/contract-first-sample.iml" />
+    </modules>
+  </component>
+</project>
