@@ -1,0 +1,14 @@
+package com.oas.contract.first.sample;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
+public class ContractFirstApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ContractFirstApplication.class, args);
+	}
+
+}

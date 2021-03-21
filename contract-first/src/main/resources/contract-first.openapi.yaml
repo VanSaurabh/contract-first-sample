@@ -1,0 +1,45 @@
+openapi: 3.0.1
+info:
+  description: a sample product api following contract first approach using open api specification
+  title: product api
+  version: v1
+servers:
+  - description: server
+    url: /v1
+tags:
+  - name: product-api
+paths:
+  /products:
+    get:
+      operationId: getProducts
+      tags:
+        - products
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProductDetailsResponse'
+
+components:
+  schemas:
+    ProductDetailsResponse:
+      type: array
+      items:
+        $ref: '#/components/schemas/ProductDetails'
+    ProductDetails:
+      type: object
+      properties:
+        name:
+          type: string
+          description: name of the product
+        price:
+          type: number
+          description: price of the product
+        category:
+          type: string
+          enum:
+            - FASHION
+            - FOOD
+            - ELECTRONICS
