@@ -186,6 +186,7 @@
 										<dateLibrary>java8</dateLibrary>
 										<java8>true</java8>
 										<booleanGetterPrefix>is</booleanGetterPrefix>
+										<apiNameSuffix>AccountSearch</apiNameSuffix>
 									</configOptions>
 								</configuration>
 							</execution>

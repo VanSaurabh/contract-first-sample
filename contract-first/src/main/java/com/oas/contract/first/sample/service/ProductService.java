@@ -20,7 +20,9 @@ public class ProductService {
     private final ProductRepository productRepository;
 
     public List<ProductDetails> getProducts() {
+        log.info("executing getProducts method of ProductService");
         Map<String, Products> productsMap = productRepository.getAllProducts();
+        log.info("got products from product repository");
         List<ProductDetails> productDetailsList = new ArrayList<>();
         productsMap.forEach((k, v) ->
                 productDetailsList.add(new ProductDetails()

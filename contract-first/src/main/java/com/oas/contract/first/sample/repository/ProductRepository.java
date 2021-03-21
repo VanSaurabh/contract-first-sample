@@ -16,6 +16,7 @@ public class ProductRepository {
 
     @PostConstruct
     public void setupProductsMap() {
+        log.info("initialising products map...");
         productsMap = new HashMap<>();
         productsMap.put("product1", Products.builder().name("product1").category("FASHION").price(120.00).build());
         productsMap.put("product2", Products.builder().name("product2").category("FOOD").price(10.00).build());
@@ -27,6 +28,7 @@ public class ProductRepository {
         productsMap.put("product8", Products.builder().name("product8").category("FOOD").price(10.00).build());
         productsMap.put("product9", Products.builder().name("product9").category("ELECTRONICS").price(1200.00).build());
         productsMap.put("product10", Products.builder().name("product10").category("FASHION").price(120.00).build());
+        log.info("products map initialised");
     }
 
 

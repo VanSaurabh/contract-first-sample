@@ -19,8 +19,9 @@ public class ProductController implements ProductsApi {
     private final ProductService productService;
 
     @Override
-    @GetMapping("/products")
+    @GetMapping("service/products")
     public ResponseEntity<List<ProductDetails>> getProducts() {
+        log.info("executing getProducts method of ProductController...");
         return ResponseEntity.ok(productService.getProducts());
     }
 }

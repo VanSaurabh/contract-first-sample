@@ -16,6 +16,6 @@ build_java() {
 }
 
 in src/main/resources/*.yaml
-  servicename=products
+  servicename=products-service
   build_java client-code "$servicename"
   build_java server-code "$servicename"
